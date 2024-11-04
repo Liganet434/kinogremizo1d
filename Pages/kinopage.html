@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineEstonia - Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #2b2b2b;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        main {
+            padding: 30px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .movie-selection, .seat-selection, .payment-details {
+            margin-bottom: 40px;
+        }
+        .movies-grid {
+            display: flex;
+            gap: 20px;
+        }
+        .movies-grid div {
+            text-align: center;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+        .movies-grid div img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .movies-grid button {
+            margin-top: 10px;
+            background-color: #F69A2B;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .showtime-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .showtime-buttons button {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .seating {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .seat-map img {
+            width: 100%;
+            max-width: 600px;
+        }
+        .payment-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .payment-method {
+            width: 45%;
+        }
+        .payment-method label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .payment-method input[type="radio"] {
+            margin-right: 10px;
+        }
+        .card-details {
+            width: 45%;
+        }
+        .card-details label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .card-details input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .confirm-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #8f5846;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #2b2b2b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CineEstonia</h1>
+    <nav>
+        <a href="file:///D:/Timotr/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BA%D0%B0/Homepage.html">Homepage</a>
+        <a href="#">Movie Listings</a>
+    </nav>
+</header>
+
+<main>
+    <section class="movie-selection">
+        <h2>Select a Movie</h2>
+        <div class="movies-grid">
+            <div>
+                <img src="adventure-estonia.jpg" alt="Adventure in Estonia">
+                <p>Adventure in Estonia</p>
+                <button>Select</button>
+            </div>
+            <div>
+                <img src="mystery-night.jpg" alt="Mystery Night">
+                <p>Mystery Night</p>
+                <button>Select</button>
+            </div>
+            <div>
+                <img src="comedy-fiesta.jpg" alt="Comedy Fiesta">
+                <p>Comedy Fiesta</p>
+                <button>Select</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="showtime-selection">
+        <h2>Select Showtime</h2>
+        <div class="showtime-buttons">
+            <button>1:00 PM</button>
+            <button>3:30 PM</button>
+            <button>6:00 PM</button>
+            <button>8:30 PM</button>
+        </div>
+    </section>
+
+    <section class="seat-selection">
+        <h2>Select Seats</h2>
+        <div class="seating">
+            <div class="seat-map">
+                <img src="seat-map.jpg" alt="Seat Map">
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-details">
+        <h2>Payment Details</h2>
+        <div class="payment-section">
+            <div class="payment-method">
+                <label>Choose Payment Method</label>
+                <input type="radio" name="payment" value="credit-card"> Credit Card
+                <br>
+                <input type="radio" name="payment" value="paypal"> PayPal
+            </div>
+            <div class="card-details">
+                <label>Enter Card Details</label>
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Card Holder Name">
+                <input type="text" placeholder="Expiry Date">
+                <input type="text" placeholder="CVV">
+            </div>
+        </div>
+    </section>
+
+    <button class="confirm-button">Confirm Booking</button>
+</main>
+
+<footer>
+    <p>© 2024 CineEstonia. All rights reserved.</p>
+    <a href="#">Contact Us</a>
+    <a href="#">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
