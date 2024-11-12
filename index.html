@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaEsto - Estonian Cinema Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9e7954;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #816b6b;
+        }
+        header a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .cta {
+            background-color: #F69A2B;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #fde4d3;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #3d3d3d;
+        }
+        .hero button {
+            background-color: #7a5d38;
+            color: rgb(0, 0, 0);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero img {
+            width: 200px;
+        }
+        .movies {
+            padding: 50px;
+        }
+        .movies h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .movies-grid {
+            display: flex;
+            gap: 20px;
+        }
+        .movies-grid div {
+            text-align: center;
+            width: 200px;
+        }
+        .genres {
+            padding: 30px 50px;
+            background-color: #7e7e4e;
+        }
+        .genres h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .genre-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .genre-list div {
+            background-color: #e87d37;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .plans {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .plan {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+        }
+        .plan h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .plan p {
+            font-size: 1.2rem;
+        }
+        .plan button {
+            background-color: #8f5846;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .plan.premium button {
+            background-color: #f69a2b;
+        }
+        footer {
+            background-color: #393534;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <a href="#">CinemaEsto</a>
+        <a href="#">Movies</a>
+        <a href="#">Showtimes</a>
+        <a href="#">Seats</a>
+        <a href="#">Tickets</a>
+    </div>
+    <div>
+        <a href="Pages/Login.html" class="cta">Log in</a>
+        <a href="Pages/reg.html" class="cta">Sign up</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Explore and enjoy Estonian cinema experience!</h1>
+        <p>Book your movie now.</p>
+        <button><a href="Pages/kinopage.html">Book tickets</a></button>
+    </div>
+    <div>
+        <img src="cinema-icon.png" alt="Cinema Icon">
+    </div>
+</section>
+
+<section class="movies">
+    <h2>Browse Current Movie Selections</h2>
+    <div class="movies-grid">
+        <div>
+            <img src="estonian-film.jpg" alt="Estonian Film" width="200">
+            <p>Estonian Film</p>
+            <p>Estonian actors and films</p>
+        </div>
+        <div>
+            <img src="estonian-comedy.jpg" alt="Estonian Comedy" width="200">
+            <p>Estonian Comedy</p>
+            <p>Local Comedy Showcase</p>
+        </div>
+        <div>
+            <img src="estonian-laughter.jpg" alt="Estonian Laughter" width="200">
+            <p>Estonian Laughter</p>
+            <p>Local Humor Association</p>
+        </div>
+        <div>
+            <img src="estonian-cinema.jpg" alt="Estonian Cinema" width="200">
+            <p>Estonian Cinema</p>
+            <p>Local Film Culture</p>
+        </div>
+        <div>
+            <img src="lights-camera.jpg" alt="Lights, Camera" width="200">
+            <p>Lights, Camera</p>
+            <p>Estonian Film Expert</p>
+        </div>
+    </div>
+</section>
+
+<section class="genres">
+    <h2>Movie Genres</h2>
+    <div class="genre-list">
+        <div>Action</div>
+        <div>Comedy</div>
+        <div>Drama</div>
+        <div>Thriller</div>
+        <div>Family</div>
+        <div>Romance</div>
+        <div>Animation</div>
+        <div>Adventure</div>
+        <div>Sci-fi</div>
+        <div>Fantasy</div>
+        <div>Horror</div>
+        <div>Mystery</div>
+        <div>Suspense</div>
+        <div>Documentary</div>
+        <div>Musical</div>
+        <div>Biography</div>
+        <div>History</div>
+    </div>
+</section>
+
+<section class="plans">
+    <div class="plan">
+        <h3>Standard</h3>
+        <p>FREE</p>
+        <p>Up to 5 movies</p>
+        <p>3 screenings monthly</p>
+        <p>7 days trial</p>
+        <button>Start with Free</button>
+    </div>
+    <div class="plan premium">
+        <h3>Premium</h3>
+        <p>$50</p>
+        <p>Unlimited movies</p>
+        <p>Unlimited screenings</p>
+        <p>7 days trial</p>
+        <button>Start with Premium</button>
+    </div>
+</section>
+
+<footer>
+    <p>CinemaEstonia - Your favorite cinema hotel booking experience since 2024</p>
+    <p>&copy; 2024</p>
+    <div>
+        <a href="#">Help</a>
+        <a href="#">FAQ</a>
+        <a href="#">Customer service</a>
+        <a href="#">How to guide</a>
+        <a href="#">Contact us</a>
+    </div>
+</footer>
+
+</body>
+</html>
