@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineEstonia Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .checkbox-label input {
+            margin-right: 10px;
+        }
+        .container button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #e65c00;
+        }
+        .container .privacy-note {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tere tulemast!</h1>
+        <p>Liitu CineEstonia ja saa osa klubi liikme eelistest.</p>
+        <form>
+            <input type="text" placeholder="Eesnimi" required>
+            <input type="text" placeholder="Perekonnanimi" required>
+            <input type="email" placeholder="Sisesta e-posti aadress" required>
+            
+            <label class="checkbox-label">
+                <input type="checkbox" required>
+                Nõustun CineEstonia tingimustega
+            </label>
+            
+            <button type="submit">Sisene</button>
+            
+            <p class="privacy-note">
+                Loe, kuidas töötleme meie klientide isikuandmeid ja missugused on Sinu õigused meie privaatsuspoliitikast.
+            </p>
+        </form>
+    </div>
+</body>
+</html>

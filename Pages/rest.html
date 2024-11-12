@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineEstonia Password Recovery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .container button {
+            background-color: #ff8c42;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #e57c3c;
+        }
+        .container .footer-note {
+            font-size: 12px;
+            color: #888;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+        .icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🔄</div>
+        <h1>Taasta oma juurdepääs</h1>
+        <p>Unustasid oma salasõna? Sisesta lihtsalt oma kontoga seotud e-posti aadress ja aitame sul luua uue.</p>
+        <p>Taastamise peate kinnitama teile saadetud e-posti teel. Pärast seda saate määrata uue salasõna.</p>
+        <form>
+            <input type="email" placeholder="Sisesta e-posti aadress" required>
+            <button type="submit">Taasta!</button>
+        </form>
+        <p class="footer-note">
+            See e-posti aadress peab olema see, mis on teie kontol.<br>
+            Teie taastamislink on aktiivne 30 päeva.
+        </p>
+    </div>
+</body>
+</html>
